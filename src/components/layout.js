@@ -18,7 +18,7 @@ function Layout({ children }) {
         aria-label="open-navigation"
         onClick={() => setToggle(!toggle)}
       >
-        <span>menu</span>
+        <span>{toggle? 'close' : 'menu'}</span>
       </ToogleBtn>
       <div className={toggle ? "disco" : "dont-disco"}>
         <div

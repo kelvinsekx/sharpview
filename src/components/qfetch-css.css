@@ -16,6 +16,9 @@ body {
   height: 0px;
 }
 
+.disco{
+  padding-top: 3rem;
+}
 @media only screen and (min-width: 899px){
     .disco{
     display: none;

@@ -118,7 +118,7 @@ position: fixed;
 top: 40rem;
 right: 0px;
 @media (max-width: 588px){
-  top: 30rem;
+  top: 23rem;
 right: 0px;
 }
 @media (min-width: 988px){
