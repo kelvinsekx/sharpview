@@ -48,17 +48,18 @@ order: 2;
 
 export const StyledFlex = Styled.div`
 display: flex;
-width: 80%;
-height: 22rem;
+width: 100%;
+height: 17rem;
 //border: 2px solid red; 
 position: relative;
-left:8rem;
-right: 8rem;
-@media (max-width: 588px){
-    left: 0px;
-    right: 0px;
-    width: 100%;
-    height: 12rem;
+left:0rem;
+right: 0rem;
+top: -2em;
+z-index: -10;
+@media (min-width: 988px){
+    left: 7.4rem;
+    width: 80%;
+    height: 20rem;
 }
 `
 
@@ -68,6 +69,14 @@ flex-direction: ${({dir})=>dir};
 width: ${({width})=>width ? width : '100%'};
 align-items: center;
 justify-content: center;
+//border: 2px solid red;
+margin: 0.3rem 0;
+`
+
+export const StyledIndexFlex = Styled.div`
+display: flex;
+flex-direction: ${({dir})=>dir};
+width: ${({width})=>width ? width : '100%'};
 //border: 2px solid red;
 margin: 0.3rem 0;
 `
@@ -82,11 +91,14 @@ position: relative;
 `
 
 export const StyledEye = Styled.span`
-font-size: ${({size})=> {let sz = Number(size) * 0.7;  return sz +'em'}};
+font-size: ${({size})=> {let sz = Number(size) * 0.5;  return sz +'em'}};
 font-weight: ${({size})=> Number(size)/2 + 'rem'}
 min-height: 5rem;
 @media (min-width: 588px){
     font-size: ${({size})=> {let sz = size;  return sz +'em'}};
+}
+@media (max-width: 188px){
+    font-size: ${({size})=> {let sz = Number(size) / 2;  return sz +'em'}};
 }
 `
 export const StyledDetails = Styled.p`
@@ -124,9 +136,13 @@ export const StyledL3 = Styled.h3`
 font-weight: 880;
 margin-bottom: 1.4rem;
 letter-spacing: -0.015em;
-font-size: 2.25rem;
+font-size: 1.32rem;
 line-height: 1.1;
 margin: 2rem 0px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 `
 
 export const Num = Styled.h5`
@@ -149,7 +165,7 @@ font-family: Futura PT,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetic
 -moz-letter-spacing: -0.015em;
 -ms-letter-spacing: -0.015em;
 letter-spacing: -0.015em;
-font-size: 1.25rem;
+font-size: 1rem;
 `
 
 

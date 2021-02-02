@@ -22,13 +22,14 @@ export const Banner = () => (
             Book a session now
           </StyledBannerAnchor>
         </p>
+        <p style={{fontSize: '67%'}}>No. 64, Adjascent Chicken Replublic, Lagos Road, Elewura Bus-top, <span style={{display: 'block'}}>Challenge, Ibadan.</span></p>
       </div>
     </StyledBannerWrapper>
   </aside>
 )
 
 export const Header = () => (
-  <header>
+  <header style={{minHeight: '2rem'}}>
     <StyledHeadNav>
       <div>
         <BrandName>Sharpview</BrandName>

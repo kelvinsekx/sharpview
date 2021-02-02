@@ -10,10 +10,12 @@ import {BHWrapper} from "./styledcomponents/a.styled";
 function Layout({ children }) {
   return (
     <div>
-        <BHWrapper>
-            <Banner />
-            <Header />
-        </BHWrapper>
+      <div style={{background: `rgba(1, 2, 122, 0.2)`, position: 'sticky', top: '0px'}}>
+          <BHWrapper>
+              <Banner />
+              <Header />
+          </BHWrapper>
+        </div>
         <main>
             {children}
         </main>
