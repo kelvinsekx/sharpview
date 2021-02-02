@@ -15,6 +15,12 @@ body {
   width: 0px;
   height: 0px;
 }
+
+@media only screen and (min-width: 899px){
+    .disco{
+    display: none;
+  }
+}
 picture,
 img {
   width: 100% !important;
