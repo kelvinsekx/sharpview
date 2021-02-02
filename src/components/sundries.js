@@ -2,7 +2,7 @@ import React from "react"
 import {
   StyledBannerWrapper, StyledBannerUL,
   StyledHeadNav, StyledBannerULDiv,
-  StyledBannerAnchor, ToogleBtn,
+  StyledBannerAnchor,
   BrandName,
 } from "./styledcomponents/a.styled";
 
@@ -33,13 +33,6 @@ export const Header = () => (
     <StyledHeadNav>
       <div>
         <BrandName>Sharpview</BrandName>
-        <ToogleBtn
-          type="button"
-          aria-expanded="false"
-          aria-label="open-navigation"
-        >
-          <span>hidden icon</span>
-        </ToogleBtn>
       </div>
 
       <StyledBannerULDiv>
