@@ -1,0 +1,73 @@
+html {
+  font: 125%/1.35 "Quattrocento Sans", sans-serif;
+  /* justify-content: s; */
+}
+body {
+  color: hsla(270, 15.797828016000002%, 0%, 0.88);
+  font-weight: normal;
+  word-wrap: break-word;
+  font-kerning: normal;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+}
+
+picture,
+img {
+  width: 100% !important;
+  height: 100% !important;
+}
+picture{
+    background-color: 2px solid black;
+    width:100% !important;
+}
+
+gatsby-image-wrapper{
+  width: 100% !important;
+}
+
+
+html,
+body,
+div,
+p,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+a {
+  color: none;
+  text-decoration: none;
+  text-shadow: none;
+  background-image: none;
+}
