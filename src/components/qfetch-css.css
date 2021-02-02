@@ -10,7 +10,11 @@ body {
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
-
+.dont-disco{
+  display: none;
+  width: 0px;
+  height: 0px;
+}
 picture,
 img {
   width: 100% !important;
