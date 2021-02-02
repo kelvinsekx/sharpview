@@ -16,7 +16,7 @@ import {FaPhone} from "@react-icons/all-files/fa/FaPhone";
 
   import LetterEyesExam from "../components/LetterEyesExam.js"
 
-  import {DTT} from "../utils/openingDays"
+  import {DTT, WWD} from "../utils/openingDays"
 
 function Home() {
   return (
@@ -25,7 +25,7 @@ function Home() {
       <div>
         <StyledIndexThreeFlex dir="column">
           <StyledCaptor>
-            <div style={{color:'#7026B9'}}>One Optometric Clinic to </div>
+            <div style={{color:'#7026B9'}}>One Eye Care to </div>
             <span style={{display: 'block'}}>Rule them all</span>
           </StyledCaptor>
           <StyledIndexThreeFlex dir="column">
@@ -41,10 +41,10 @@ function Home() {
           <StyledL3><div>Services rendered</div> <div style={{ color: '#119905', fontSize: '85%'}}>by Sharpview</div></StyledL3>
           <StyledIndexThreeFlex width="80%">
           <StyledTwoFlex>
-          {[{cl: '#663399'},{cl: '#0d96f2'},{cl: '#bc027f'}].map(each=><StyledIndexFlex dir="column">
-              <StyledInH4>Low vision</StyledInH4>
+          {WWD.map(each=><StyledIndexFlex dir="column">
+              <StyledInH4>{each.main}</StyledInH4>
               <div style={{fontSie: '1rem'}}>
-                <StyledDetails colr={each.cl}>A condition characterized by a level of vision that is 20/70.</StyledDetails>
+                <StyledDetails colr={each.cl}>{each.body}.</StyledDetails>
               </div>
             </StyledIndexFlex>)}
             </StyledTwoFlex>
@@ -67,7 +67,7 @@ function Home() {
               <header style={{color: '#119905', padding: '1em', textAlign: 'center'}}>Our working days and time </header>
               <div>
                 {
-                  DTT.map(each=><StyledIndexFlex style={{fontSize: '102%', color: `${each.col}`}}><div><StyledStrong col='black'>{each.day}</StyledStrong> <span>{each.tm}</span></div></StyledIndexFlex>)
+                  DTT.map(each=><StyledIndexFlex style={{fontSize: '102%', color: `${each.col}`}}><div><StyledStrong col='black'>{each.day}</StyledStrong> <span>{each.day == 'Sunday' ? 'closed' : '8:30am - 6:30pm'}</span></div></StyledIndexFlex>)
                 }
               </div>
             </StyledEqualHalf>
@@ -81,7 +81,7 @@ function Home() {
           <p style={{marginBottom: '1rem'}}>It only takes a few minutes to reach us</p>
           <StyledIndexThreeFlex>
             <StyledFlex style={{justifyContent: 'center', alignItems: 'center'}}>
-            <StyledCaptorPaa as='div'>Adjascent Chicken republic, Elewura bus stop, Challenge, Ibadan, Oyo state.</StyledCaptorPaa> <StyledCall><div>+234 8055 3009 95</div><div style={{position: 'relative', marginLeft: '1em', top: '4px'}}><FaPhone /></div></StyledCall>
+            <StyledCaptorPaa as='div'>Adjascent Chicken republic, Elewura bus stop, Challenge, Ibadan, Oyo state.</StyledCaptorPaa> <StyledCall><div>+234 229 18611</div><div style={{position: 'relative', marginLeft: '1em', top: '4px'}}><FaPhone /></div></StyledCall>
             </StyledFlex>
           </StyledIndexThreeFlex>
         </StyledIndexThreeFlex>

@@ -107,6 +107,7 @@ min-height: 5rem;
 `
 export const StyledDetails = Styled.p`
 color: ${({colr})=>colr};
+padding: 0.01em 0.2em;
 `
 
 export const StyledEqualHalf = Styled.div`
@@ -159,6 +160,8 @@ color:rgba(12,45, 122, 1)
 export const StyledInH4 = Styled.h4`
 @media (min-width: 720px){
     font-size: 1.5rem;
+    min-height: 3.4rem;
+max-width: 12rem;
 }
 margin: 0;
 line-height: 1.25;
