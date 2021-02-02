@@ -29,7 +29,11 @@ margin-bottom: 3rem;
 margin-top: 1.5rem;
 -webkit-order: 3;
 -ms-flex-order: 3;
-order: 3;
+order: 2;
+div{
+    padding: 1.05em 0.7em;
+    text-align: center;
+}
 `
 
 export const FDiv1 = Styled.div`
