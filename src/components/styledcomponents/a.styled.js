@@ -113,9 +113,14 @@ padding-right: 2rem;
 `
 
 export const ToogleBtn = Styled.button`
+display: block;
 position: fixed;
 top: 40rem;
 right: 0px;
+@media (max-width: 588px){
+  top: 40rem;
+right: 0px;
+}
 @media (min-width: 988px){
   display: none;
 }
