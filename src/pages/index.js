@@ -8,7 +8,7 @@ import {StyledIndexThreeFlex,Num, StyledStrong,
   StyledL4} from "../components/styledcomponents/b.styled";
 
 import {StyledCaptor, StyledCaptorP, StyledExploreBtn,
-  StyledArr, StyledFlex, StyledCall, StyledCaptorPaa} from "../components/styledcomponents/c.styled"
+  StyledArr, StyledFlex, StyledCall, StyledCaptorPaa, StyledUrgent} from "../components/styledcomponents/c.styled"
 import "../components/indexCss.css"
 
 import {BsArrowRight} from "@react-icons/all-files/bs/BsArrowRight";
@@ -52,6 +52,8 @@ function Home() {
           <StyledExploreBtn>
             <div>Explore what more we offer</div> <StyledArr ><BsArrowRight /></StyledArr></StyledExploreBtn>
         </StyledIndexThreeFlex>
+        <StyledUrgent>
+          <a href="tel:+234 229 18611">Urgent ?? Call Now</a></StyledUrgent>
 
         <StyledIndexThreeFlex as="article" dir="column">
           <Num>2</Num>
@@ -67,14 +69,14 @@ function Home() {
               <header style={{color: '#119905', padding: '1em', textAlign: 'center'}}>Our working days and time </header>
               <div>
                 {
-                  DTT.map(each=><StyledIndexFlex style={{fontSize: '102%', color: `${each.col}`}}><div><StyledStrong col='black'>{each.day}</StyledStrong> <span>{each.day == 'Sunday' ? 'closed' : '8:30am - 6:30pm'}</span></div></StyledIndexFlex>)
+                  DTT.map(each=><StyledIndexFlex style={{fontSize: '102%', color: `${each.col}`}}><div><StyledStrong col='black'>{each.day}</StyledStrong> <span>{each.day === 'Sunday' ? 'closed' : '8:30am - 6:30pm'}</span></div></StyledIndexFlex>)
                 }
               </div>
             </StyledEqualHalf>
             </StyledTwoFlex>
             </StyledIndexThreeFlex>
         </StyledIndexThreeFlex>
-
+            
         <StyledIndexThreeFlex as="article" dir="column" className="num-iii">
           <Num>3</Num>
           <h2 style={{fontSize: '250%', fontWeight: '890'}}>Curious Yet?</h2>

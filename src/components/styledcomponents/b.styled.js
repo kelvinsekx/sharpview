@@ -50,7 +50,7 @@ margin-top: 0.75rem;
 order: 2;
 `
 
-export const StyledFlex = Styled.div`
+export const FLEXED = Styled.div`
 display: flex;
 width: 100%;
 height: 17rem;
@@ -89,8 +89,10 @@ export const StyledTwoFlex = Styled.div`
 display: flex;
 flex-direction: column;
 position: relative;
-@media (min-width: 588px){
+@media (min-width: 788px){
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 `
 

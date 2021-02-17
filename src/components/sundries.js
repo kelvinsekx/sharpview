@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "gatsby"
 import {
   StyledBannerWrapper, StyledBannerUL,
   StyledHeadNav, StyledBannerULDiv,
@@ -18,7 +19,7 @@ export const Banner = () => (
       <div>
         <p>
           <strong>More than an Eye Clinic:</strong> Join us at Sharpview!{" "}
-          <StyledBannerAnchor href="/bookings">
+          <StyledBannerAnchor href="/book">
             Book a session now
           </StyledBannerAnchor>
         </p>
@@ -32,14 +33,16 @@ export const Header = () => (
   <header style={{minHeight: '2rem'}}>
     <StyledHeadNav>
       <div>
-        <BrandName>Sharpview</BrandName>
+        <BrandName>
+        <Link to="/">Sharpview</Link>
+        </BrandName>
       </div>
 
       <StyledBannerULDiv>
         <StyledBannerUL>
-          <li>Products</li>
-          <li>About Us</li>
-          <li>Contact</li>
+          <li><Link to="/products">Products</Link></li>
+          <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </StyledBannerUL>
       </StyledBannerULDiv>
 
@@ -49,3 +52,14 @@ export const Header = () => (
     </StyledHeadNav>
   </header>
 )
+
+export function MinNavLi ({children}){
+  const getLink = `/${children.toLowerCase().split(' ')[0]}`
+  return (
+    <div
+          style={{ marginBottom: "1.2rem", textAlign: 'center'  }}
+        >
+          <Link style={{borderBottom: "4px solid black"}} to = {getLink}>{children}</ Link>
+        </div>
+  )
+}

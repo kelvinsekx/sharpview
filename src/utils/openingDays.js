@@ -39,7 +39,7 @@ export const WWD = [
   {
     main: "Low vision",
     body:
-      "A condition characterized by a level of vision that is 20/70. At Sharpview,record of eliminating this condition with our awesome treatments and practice",
+      "A condition characterized by a level of vision that is 20/70. At Sharpview,we are trusted with eliminating this condition with our awesome treatments and practice",
   },
   {
     main: "Emergency Eye Care Services",

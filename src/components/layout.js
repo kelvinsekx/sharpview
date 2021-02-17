@@ -1,12 +1,11 @@
-import React from "react"
+import React, {useState} from "react"
 // prefetch this css
 import "./qfetch-css.css"
 
 // now fetch the rest
-import { Banner, Header, EFooter } from "./sundries"
+import { Banner, Header, EFooter,
+  MinNavLi } from "./sundries"
 import { BHWrapper, ToogleBtn } from "./styledcomponents/a.styled"
-
-import { useState } from "react"
 
 function Layout({ children }) {
   const [toggle, setToggle] = useState(false)
@@ -21,26 +20,11 @@ function Layout({ children }) {
         <span>{toggle? 'close' : 'menu'}</span>
       </ToogleBtn>
       <div className={toggle ? "disco" : "dont-disco"}>
-        <div
-          style={{ borderBottom: "1px solid black", marginBottom: "1.2rem" }}
-        >
-          Products
-        </div>
-        <div
-          style={{ borderBottom: "1px solid black", marginBottom: "1.2rem" }}
-        >
-          About Us
-        </div>
-        <div
-          style={{ borderBottom: "1px solid black", marginBottom: "1.2rem" }}
-        >
-          Contact
-        </div>
-        <div
-          style={{ borderBottom: "1px solid black", marginBottom: "1.2rem" }}
-        >
-          Book a Session
-        </div>
+        {['Products', 'About Us', 'Contact', 'Book a Session'].map(
+          each => <MinNavLi>
+          {each}
+        </MinNavLi>
+        )}
         <footer
           style={{ color: "grey", marginTop: "1.5rem", padding: "0.3em 0.2em" }}
         >
@@ -78,4 +62,4 @@ function Layout({ children }) {
   )
 }
 
-export default Layout
+export default Layout;

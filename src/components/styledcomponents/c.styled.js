@@ -45,6 +45,17 @@ font-size: 65%;
 border-radius: 12%;
 `
 
+export const StyledUrgent = Styled.div`
+position: sticky;
+    bottom: 0px;
+    background-color: #000;
+    color: rgb(165, 87, 165);
+     width: 44%;
+     font-size: 88%;
+     @media (min-width: 588px){
+         display: none;
+     }
+`
 export const StyledArr = Styled.div`
 position: relative;
 @media (min-width: 588px){
@@ -59,6 +70,8 @@ display: flex;
     flex-direction: row;
 }
 flex-direction: column;
+align-items: center;
+justify-content: center;
 `
 
 export const StyledCall = Styled.div`

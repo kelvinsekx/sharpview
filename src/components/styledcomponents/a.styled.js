@@ -48,7 +48,10 @@ text-decoration: underline;
 `
 
 export const BrandName = Styled.b`
-font-weight: 888;
+font-weight: 608;
+a{
+  color: #fff;
+}
 `
 export const StyledHeadNav = Styled.nav`
 display: flex;
@@ -82,7 +85,12 @@ justify-content: space-between;
 width : 16rem;
 
 li {
-    font-size: 89%;
+    font-size: 91%;
+    font-weight: 500;
+
+  a{
+    color: #fff;
+  }
 }
 `
 
@@ -117,6 +125,13 @@ display: block;
 position: fixed;
 top: 40rem;
 right: 0px;
+padding: 1em 0.2em 1em 1em;
+border: 2px solid purple;
+color: purple;
+background: #fff;
+border-top-left-radius: 50%;
+border-bottom-left-radius: 50%;
+
 @media (max-width: 588px){
   top: 23rem;
 right: 0px;
