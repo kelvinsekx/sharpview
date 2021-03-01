@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from '../components/layout'
-import {StyledTwoFlex} from "../components/styledcomponents/b.styled";
 
 
 export default function Contact () {

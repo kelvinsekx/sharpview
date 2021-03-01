@@ -19,6 +19,9 @@ function ImageSlider () {
             }
           }
         `)}
+        initDelay={2} // delay before the first transition (if left at 0, the first image will be skipped initially)
+      transition={4} // transition duration between images
+      duration={8}
       />
      )
 }

@@ -7,8 +7,9 @@ import { Banner, Header, EFooter,
   MinNavLi } from "./sundries"
 import { BHWrapper, ToogleBtn } from "./styledcomponents/a.styled"
 
-function Layout({ children }) {
-  const [toggle, setToggle] = useState(false)
+function Layout(props) {
+  const [toggle, setToggle] = useState(false);
+
   return (
     <div>
       <ToogleBtn
@@ -55,7 +56,7 @@ function Layout({ children }) {
             <Header />
           </BHWrapper>
         </div>
-        <main>{children}</main>
+        <main>{props.children}</main>
         <EFooter />
       </div>}
     </div>

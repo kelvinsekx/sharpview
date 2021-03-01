@@ -50,20 +50,22 @@ margin-top: 0.75rem;
 order: 2;
 `
 
-export const FLEXED = Styled.div`
+export const Flexed = Styled.div`
 display: flex;
 width: 100%;
-height: 17rem;
+height: 12rem;
 //border: 2px solid red; 
 position: relative;
 left:0rem;
 right: 0rem;
-top: -2em;
+top: -1.4rem;
 z-index: -10;
+overflow: hidden;
 @media (min-width: 988px){
-    left: 7.4rem;
-    width: 80%;
-    height: 20rem;
+    top: -4rem;
+    left: 6rem;
+    width: 85%;
+    min-height: 27rem;
 }
 `
 

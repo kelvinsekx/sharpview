@@ -26,7 +26,7 @@ padding: 1.3em;
 export const StyledCaptorPaa = Styled.div`
 text-align: center; 
 font-size: 70%;
-margin-top: 1em;
+margin-top: 0.5em;
 margin-bottom: 4em;
 padding: 0.3em 0.5em;
 @media (min-width: 588px){
@@ -52,6 +52,7 @@ position: sticky;
     color: rgb(165, 87, 165);
      width: 44%;
      font-size: 88%;
+     padding: 0.3em 0.1em;
      @media (min-width: 588px){
          display: none;
      }

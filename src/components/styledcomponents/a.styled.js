@@ -125,7 +125,7 @@ display: block;
 position: fixed;
 top: 40rem;
 right: 0px;
-padding: 1em 0.2em 1em 1em;
+padding: 0.7em 0.2em 0.7em 0.4em;
 border: 2px solid purple;
 color: purple;
 background: #fff;

@@ -53,7 +53,7 @@ function Home() {
             <div>Explore what more we offer</div> <StyledArr ><BsArrowRight /></StyledArr></StyledExploreBtn>
         </StyledIndexThreeFlex>
         <StyledUrgent>
-          <a href="tel:+234 229 18611">Urgent ?? Call Now</a></StyledUrgent>
+          <a href="tel:+234 229 18611">urgent? call now</a></StyledUrgent>
 
         <StyledIndexThreeFlex as="article" dir="column">
           <Num>2</Num>
