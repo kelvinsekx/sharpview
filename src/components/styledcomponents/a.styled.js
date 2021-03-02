@@ -89,7 +89,7 @@ li {
     font-weight: 500;
 
   a{
-    color: rgb(41, 33, 33);
+    color: #f4f4f4;
     font-weight: 700;
   }
 }
