@@ -9,6 +9,7 @@ body {
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+
 }
 
 .ctFlex{
@@ -161,7 +162,6 @@ summary {
 }
 
 a {
-  /* color: #fff !important; */
   text-decoration: none;
   text-shadow: none;
   background-image: none;

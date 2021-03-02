@@ -50,7 +50,7 @@ text-decoration: underline;
 export const BrandName = Styled.b`
 font-weight: 608;
 a{
-  color: #fff;
+  color: #f4f4f4;
 }
 `
 export const StyledHeadNav = Styled.nav`
@@ -89,7 +89,8 @@ li {
     font-weight: 500;
 
   a{
-    color: #fff;
+    color: rgb(41, 33, 33);
+    font-weight: 700;
   }
 }
 `

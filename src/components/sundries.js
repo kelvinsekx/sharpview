@@ -1,5 +1,6 @@
 import React from "react"
 import {Link} from "gatsby"
+import Brand from "../images/favicon.jpg";
 import {
   StyledBannerWrapper, StyledBannerUL,
   StyledHeadNav, StyledBannerULDiv,
@@ -34,7 +35,8 @@ export const Header = () => (
     <StyledHeadNav>
       <div>
         <BrandName>
-        <Link to="/">Sharpview</Link>
+        <Link to="/"><div style={{width: '4rem', height: '3rem'}}><img src={Brand} alt="sharpview logo" /></div>
+        </Link>
         </BrandName>
       </div>
 
