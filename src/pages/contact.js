@@ -5,14 +5,13 @@ import Layout from '../components/layout'
 export default function Contact () {
     return (
         <Layout>
-            <h1 style={{fontSize: '300%'}}>Contact Us</h1>
+            <h1>Contact Us</h1>
             <div className='ctFlex'>
                 <div className="ctf-1">
                     <div style={{fontSize: '230%'}}>Time is <span style={{backgroundColor: 'blue', color: 'white'}}>Precious</span></div>
                     <div className='ctp'><p>And so we value your precious time and effort to reach Sharpview.</p><p>Make it snappy. Reach us now</p></div>
                 </div>
                 <div className="ctf-2">
-                    <div>Contact through this form</div>
                     <div>
                         <div className="tits">
                         <p>Name</p>

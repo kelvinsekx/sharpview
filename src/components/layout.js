@@ -21,7 +21,7 @@ function Layout(props) {
         <span>{toggle? 'close' : 'menu'}</span>
       </ToogleBtn>
       <div className={toggle ? "disco" : "dont-disco"}>
-        {['Products', 'About Us', 'Contact', 'Book a Session'].map(
+        {['About Us', 'Contact', 'Book a Session'].map(
           each => <MinNavLi>
           {each}
         </MinNavLi>

@@ -40,7 +40,6 @@ export const Header = () => (
 
       <StyledBannerULDiv>
         <StyledBannerUL>
-          <li><Link to="/products">Products</Link></li>
           <li><Link to="/about">About Us</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </StyledBannerUL>

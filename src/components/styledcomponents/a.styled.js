@@ -32,7 +32,7 @@ top: 0px;
 text-align: center;
 padding-top: 0.45em;
 padding-bottom: 0.45em;
-@media (min-width: 966px){
+@media (min-width: 888px){
   width: 70%;
   font-size: 80%;
 }
@@ -60,12 +60,12 @@ justify-content: space-between;
 //border: 2px solid red;
 position: relative;
 top: 0.24em;
-@media (max-width: 588px){
+@media (max-width: 888px){
   margin-top: 0.5em;
 }
 `
 export const StyledBannerULDiv = Styled.div`
-@media (max-width: 988px){
+@media (max-width: 888px){
   display: none;
 }
 display: flex;
@@ -113,7 +113,7 @@ position: relative;
 z-index: 100;
 color: white;
 font-weight: 780;
-@media (min-width: 568px) {
+@media (min-width: 888px) {
     width: 70%;
     padding-left: 2rem;
 padding-right: 2rem;
@@ -132,11 +132,10 @@ background: #fff;
 border-top-left-radius: 50%;
 border-bottom-left-radius: 50%;
 
-@media (max-width: 588px){
   top: 23rem;
 right: 0px;
-}
-@media (min-width: 988px){
+
+@media (min-width: 888px){
   display: none;
 }
 `
