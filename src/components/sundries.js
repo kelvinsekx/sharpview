@@ -10,6 +10,10 @@ import {
 
 import { BsSearch } from "@react-icons/all-files/bs/BsSearch";
 
+// icon
+import {AiOutlineDeploymentUnit} from "@react-icons/all-files/ai/AiOutlineDeploymentUnit"
+import {AiOutlineNodeExpand} from "@react-icons/all-files/ai/AiOutlineNodeExpand"
+
 import Footer from "./footer";
 
 export const EFooter = Footer;
@@ -35,15 +39,25 @@ export const Header = () => (
     <StyledHeadNav>
       <div>
         <BrandName>
-        <Link to="/"><div style={{width: '4rem', height: '3rem'}}><img src={Brand} alt="sharpview logo" /></div>
+        <Link to="/"><div style={{width: '3rem', height: '2rem'}}><img src={Brand} alt="sharpview logo" /></div>
         </Link>
         </BrandName>
       </div>
 
       <StyledBannerULDiv>
         <StyledBannerUL>
-          <li><Link to="/about">About Us</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li>
+            <Link to="/about" style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+              <span style={{display:"inline-block",fontSize: '1.4rem'}}><AiOutlineDeploymentUnit /></span>
+              <span>About Us</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+            <span style={{display:"inline-block",fontSize: '1.4rem'}}><AiOutlineNodeExpand /></span>
+              <span>Contact</span>
+            </Link>
+          </li>
         </StyledBannerUL>
       </StyledBannerULDiv>
 

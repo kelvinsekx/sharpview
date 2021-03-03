@@ -112,10 +112,16 @@ min-height: 5rem;
 export const StyledDetails = Styled.p`
 color: ${({colr})=>colr};
 padding: 0.01em 0.2em;
+font-size: 78.5%;
+margin-bottom: 4.5%;
+@media (min-width: 888px){
+font-size: 97%;
+margin-bottom: 0;
+}
 `
 
 export const StyledEqualHalf = Styled.div`
-@media (min-width: 599px){
+@media (min-width: 888px){
 width: ${({eq})=>eq+'%'};
 padding: 0px 1rem;
 }
@@ -169,7 +175,7 @@ max-width: 12rem;
 }
 margin: 0;
 line-height: 1.25;
-color: #232129;
+color: rgb(70, 61, 61);
 font-weight: 700;
 font-family: Futura PT,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 -webkit-letter-spacing: -0.015em;
@@ -177,6 +183,7 @@ font-family: Futura PT,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetic
 -ms-letter-spacing: -0.015em;
 letter-spacing: -0.015em;
 font-size: 1rem;
+margin-bottom: 0.78em;
 `
 
 

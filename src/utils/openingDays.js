@@ -32,18 +32,21 @@ export const DTT = [
 
 export const WWD = [
   {
-    main: "Comprehensive Eye Exams",
+    main: " Eye Exams",
+    part: "Comprehensive",
     body:
-      "Learn more about what problems can be spotted with an eye exam, what’s involved in a comprehensive exam, and special considerations for kids and contacts",
+      "Learn more about what problems can be spotted with an eye exam, what’s involved in a comprehensive exam, <b style='color: black; '>and special considerations for kids and contacts</b>",
   },
   {
-    main: "Low vision",
+    main: " vision",
+    part: "Low",
     body:
-      "A condition characterized by a level of vision that is 20/70. At Sharpview,we are trusted with eliminating this condition with our awesome treatments and practice",
+      "A condition characterized by a level of vision that is 20/70. At Sharpview,we are trusted with eliminating this condition with <b style='color: black; '>our awesome treatments and practice</b>",
   },
   {
-    main: "Emergency Eye Care Services",
+    main: " Eye Care Services",
+    part: "Emergency",
     body:
-      "We offer emergency services that require immediate and urgent eye care. If your eye is injured, don't try to judge the severity of it",
+      "We offer emergency services that require immediate and urgent eye care. If your eye is injured, <b style='color: black; '>don't try to judge the severity of it</b>",
   },
 ]

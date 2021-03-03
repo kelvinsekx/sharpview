@@ -13,7 +13,6 @@ import "../components/indexCss.css"
 
 import {BsArrowRight} from "@react-icons/all-files/bs/BsArrowRight";
 import {FaPhone} from "@react-icons/all-files/fa/FaPhone";
-
   import LetterEyesExam from "../components/LetterEyesExam.js"
 
   import {DTT, WWD} from "../utils/openingDays"
@@ -40,13 +39,13 @@ function Home() {
           <StyledL4>top notch services</StyledL4>
           <StyledL3><div>Services rendered</div> <div style={{ color: '#119905', fontSize: '85%'}}>by Sharpview</div></StyledL3>
           <StyledIndexThreeFlex width="80%">
-          <StyledTwoFlex>
-          {WWD.map(each=><StyledIndexFlex dir="column">
-              <StyledInH4>{each.main}</StyledInH4>
-              <div style={{fontSie: '1rem'}}>
-                <StyledDetails colr={each.cl}>{each.body}.</StyledDetails>
-              </div>
-            </StyledIndexFlex>)}
+            <StyledTwoFlex>
+              {WWD.map(each=><StyledIndexFlex dir="column" key={each.part}>
+                  <StyledInH4><span style={{color: "purple"}}>{each.part}</span>{each.main}</StyledInH4>
+                    <StyledDetails colr={each.cl} dangerouslySetInnerHTML={{ __html: `${each.body}.` }}>
+                    </StyledDetails>
+                </StyledIndexFlex>)
+              }
             </StyledTwoFlex>
           </StyledIndexThreeFlex>
           <StyledExploreBtn>
@@ -69,7 +68,7 @@ function Home() {
               <header style={{color: '#119905', padding: '1em', textAlign: 'center'}}>Our working days and time </header>
               <div>
                 {
-                  DTT.map(each=><StyledIndexFlex style={{fontSize: '102%', color: `${each.col}`}}><div><StyledStrong col='black'>{each.day}</StyledStrong> <span>{each.day === 'Sunday' ? 'closed' : '8:30am - 6:30pm'}</span></div></StyledIndexFlex>)
+                  DTT.map(each=><StyledIndexFlex key={each.day} style={{fontSize: '102%', color: `${each.col}`}}><div><StyledStrong col='black'>{each.day}</StyledStrong> <span>{each.day === 'Sunday' ? 'closed' : '8:30am - 6:30pm'}</span></div></StyledIndexFlex>)
                 }
               </div>
             </StyledEqualHalf>

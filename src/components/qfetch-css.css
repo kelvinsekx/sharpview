@@ -114,12 +114,12 @@ picture{
   background-size: cover;
   background-position: center center;
   overflow: hidden;
-  padding-top: 55rem;
+  padding-top: 58rem;
 }
 @media only screen and (max-width: 888px){
   .gatsby-image-wrapper{
-    padding-top: 18rem;
-}
+    padding-top: 25rem;
+  }
 }
 
 html,

@@ -22,7 +22,7 @@ function Layout(props) {
       </ToogleBtn>
       <div className={toggle ? "disco" : "dont-disco"}>
         {['About Us', 'Contact', 'Book a Session'].map(
-          each => <MinNavLi>
+          each => <MinNavLi key={each}>
           {each}
         </MinNavLi>
         )}
