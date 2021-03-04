@@ -94,6 +94,10 @@ body {
     .disco{
     display: none;
   }
+  .urgent{
+    width: 0;
+    display: none;
+  }
 }
 
 

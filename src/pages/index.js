@@ -1,5 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
+import Zoom from 'react-reveal/Zoom';
+import Bounce from 'react-reveal/Bounce';
+import Fade from 'react-reveal/Fade';
+import Rotate from 'react-reveal/Rotate';
+
+// import "../utils/tinySticky"
 
 import {ImgCarousel} from "../components/index.sundries"
 import {StyledIndexThreeFlex,Num, StyledStrong, 
@@ -24,11 +30,11 @@ function Home() {
       <div>
         <StyledIndexThreeFlex dir="column">
           <StyledCaptor>
-            <div style={{color:'#7026B9'}}>One Eye Care to </div>
+            <Bounce><div style={{color:'#7026B9'}}>One Eye Care to </div></Bounce>
             <span style={{display: 'block'}}>Rule them all</span>
           </StyledCaptor>
           <StyledIndexThreeFlex dir="column">
-            <StyledCaptorP> With a complete range of expert eye care services, <span style={{color: 'black', fontWeight: '800'}}>Dr. Gbolade Osinuga and our team,</span> are dedicated to helping you enjoy healthy eyes and sharp vision.</StyledCaptorP>
+            <StyledCaptorP> With a complete range of expert eye care services, <Rotate><span style={{color: 'black', fontWeight: '800'}}>Dr. Gbolade Osinuga and our team,</span></Rotate> are dedicated to helping you enjoy healthy eyes and sharp vision.</StyledCaptorP>
           </StyledIndexThreeFlex>
         </StyledIndexThreeFlex>
 
@@ -36,7 +42,7 @@ function Home() {
 
         <StyledIndexThreeFlex as="article" dir="column">
           <Num>1</Num>
-          <StyledL4>top notch services</StyledL4>
+          <Zoom><StyledL4>top notch services</StyledL4></Zoom>
           <StyledL3><div>Services rendered</div> <div style={{ color: '#119905', fontSize: '85%'}}>by Sharpview</div></StyledL3>
           <StyledIndexThreeFlex width="80%">
             <StyledTwoFlex>
@@ -52,11 +58,12 @@ function Home() {
             <div>Explore what more we offer</div> <StyledArr ><BsArrowRight /></StyledArr></StyledExploreBtn>
         </StyledIndexThreeFlex>
         <StyledUrgent>
-          <a href="tel:+234 229 18611">urgent? call now</a></StyledUrgent>
+          <a href="tel:+234 229 18611">urgent? call now</a>
+        </StyledUrgent>
 
         <StyledIndexThreeFlex as="article" dir="column">
           <Num>2</Num>
-          <StyledL4>fast delivery</StyledL4>
+          <Zoom><StyledL4>fast delivery</StyledL4></Zoom>
           <StyledL3>Start from here</StyledL3>
           {/* <LetterEyesExam /> */}
           <StyledIndexThreeFlex>
@@ -79,7 +86,7 @@ function Home() {
         <StyledIndexThreeFlex as="article" dir="column" className="num-iii">
           <Num>3</Num>
           <h2 style={{fontSize: '250%', fontWeight: '890'}}>Curious Yet?</h2>
-          <p style={{marginBottom: '1rem'}}>It only takes a few minutes to reach us</p>
+          <Fade><p style={{marginBottom: '1rem'}}>It only takes a few minutes to reach us</p></Fade>
           <StyledIndexThreeFlex>
             <StyledFlex style={{justifyContent: 'center', alignItems: 'center'}}>
             <StyledCaptorPaa as='div'>Adjascent Chicken republic, Elewura bus stop, Challenge, Ibadan, Oyo state.</StyledCaptorPaa> <StyledCall><div>+234 229 18611</div><div style={{position: 'relative', marginLeft: '1em', top: '4px'}}><FaPhone /></div></StyledCall>
