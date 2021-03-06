@@ -4,7 +4,7 @@ import Zoom from 'react-reveal/Zoom';
 import Bounce from 'react-reveal/Bounce';
 import Fade from 'react-reveal/Fade';
 
-import {navigate} from "gatsby"
+import {navigate} from "gatsby-link"
 
 
 export default function Contact () {
@@ -20,7 +20,7 @@ export default function Contact () {
     }
 
     function encode (data) {
-        return Object.keys(data).map(key=> encodeURIComponent(key) + '=' + encodeURIComponent(data[key])).join('&')
+        return Object.keys(data).map((key)=> encodeURIComponent(key) + '=' + encodeURIComponent(data[key])).join('&')
     }
     const handleSubmit = (e)=> {
         e.preventDefault();
@@ -36,7 +36,7 @@ export default function Contact () {
                 ...state
                 }
             )
-        }).then(()=>alert("Wait a sec, your data is collected."))
+        }).then(()=>alert("Wait a sec, your data is collected. Sharpview will reach back to you soon. Bye!!!"))
         .then(()=>navigate(form.getAttribute('action')))
         .catch(err=>alert(err))
     }
@@ -56,14 +56,14 @@ export default function Contact () {
                     data-netlify="true"
                     action="/"
                     onSubmit = {handleSubmit}>
-                        <input type="hidden" name="form-name" value="contactsharpview" />
+                        {/* <input type="hidden" name="form-name" value="contactsharpview" /> */}
                     <div>
                         <div className="tits">
                         <p>Name</p>
                         <input 
                             placeholder="Mr sekx..."
                             autoComplete="name"
-                            name="UserName"
+                            name="username"
                             onChange={handleChange}/>
                         </div>
 
@@ -72,7 +72,7 @@ export default function Contact () {
                         <input 
                             placeholder="help us reply you..."
                             autoComplete="email"
-                            name="Email"
+                            name="email"
                             onChange={handleChange}/>
                         </div>
 
