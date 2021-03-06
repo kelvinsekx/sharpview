@@ -12,3 +12,9 @@ return (
     </Flexed>
 )
 }
+
+export function Lala (props){
+    return (
+        <div style={{width: '5%', maxHeight: '10%', backgroundColor: props.cu, padding: '0.3rem 0.4rem'}}></div>
+    )
+}

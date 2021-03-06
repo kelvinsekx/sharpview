@@ -1,14 +1,14 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
+import { Link } from "gatsby"
 // prefetch this css
 import "./qfetch-css.css"
-
+import Brand from "../images/favicon.jpg"
 // now fetch the rest
-import { Banner, Header, EFooter,
-  MinNavLi } from "./sundries"
+import { Banner, Header, EFooter, MinNavLi } from "./sundries"
 import { BHWrapper, ToogleBtn } from "./styledcomponents/a.styled"
 
 function Layout(props) {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(false)
 
   return (
     <div>
@@ -18,16 +18,23 @@ function Layout(props) {
         aria-label="open-navigation"
         onClick={() => setToggle(!toggle)}
       >
-        <span>{toggle? 'close' : 'menu'}</span>
+        <span>{toggle ? "close" : "menu"}</span>
       </ToogleBtn>
       <div className={toggle ? "disco" : "dont-disco"}>
-        {['About Us', 'Contact', 'Book a Session'].map(
-          each => <MinNavLi key={each}>
-          {each}
-        </MinNavLi>
-        )}
+        <div style={{display: 'flex', justifyContent:'center', alignItems:'center', paddingTop: "0.3rem", paddingBottom: '4em'}}>
+          <Link to="/">
+            <div style={{ width: "6rem", height: "5.3rem" }}>
+              <img src={Brand} alt="sharpview logo" />
+            </div>
+          </Link>
+        </div>
+        <div>
+          {["About Us", "Contact", "Book a Session"].map(each => (
+            <MinNavLi key={each}>{each}</MinNavLi>
+          ))}
+        </div>
         <footer
-          style={{ color: "grey", marginTop: "1.5rem", padding: "0.3em 0.2em" }}
+          style={{ color: "grey", marginTop: "2rem", padding: "0.3em 0.2em" }}
         >
           <div style={{ fontSize: "70%", marginBottom: "1rem" }}>
             During the use of this app, if you find a glitch or accessibility
@@ -43,24 +50,26 @@ function Layout(props) {
           </div>
         </footer>
       </div>
-      {toggle ? null : <div>
-        <div
-          style={{
-            background: `rgba(1, 2, 122, 0.2)`,
-            position: "sticky",
-            top: "0px",
-          }}
-        >
-          <BHWrapper>
-            <Banner />
-            <Header />
-          </BHWrapper>
+      {toggle ? null : (
+        <div>
+          <div
+            style={{
+              background: `rgba(1, 2, 122, 0.2)`,
+              position: "sticky",
+              top: "0px",
+            }}
+          >
+            <BHWrapper>
+              <Banner />
+              <Header />
+            </BHWrapper>
+          </div>
+          <main>{props.children}</main>
+          <EFooter />
         </div>
-        <main>{props.children}</main>
-        <EFooter />
-      </div>}
+      )}
     </div>
   )
 }
 
-export default Layout;
+export default Layout

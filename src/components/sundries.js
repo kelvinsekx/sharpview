@@ -24,7 +24,7 @@ export const Banner = () => (
       <div>
         <p>
           <strong>More than an Eye Clinic:</strong> Join us at Sharpview!{" "}
-          <StyledBannerAnchor href="/book">
+          <StyledBannerAnchor href="https://forms.gle/ssGd28KgtSPZbi9s6">
             Book a session now
           </StyledBannerAnchor>
         </p>

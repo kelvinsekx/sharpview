@@ -45,7 +45,7 @@ function Home() {
           <Zoom><StyledL4>top notch services</StyledL4></Zoom>
           <StyledL3><div>Services rendered</div> <div style={{ color: '#119905', fontSize: '85%'}}>by Sharpview</div></StyledL3>
           <StyledIndexThreeFlex width="80%">
-            <StyledTwoFlex>
+            <StyledTwoFlex c={true}>
               {WWD.map(each=><StyledIndexFlex dir="column" key={each.part}>
                   <StyledInH4><span style={{color: "purple"}}>{each.part}</span>{each.main}</StyledInH4>
                     <StyledDetails colr={each.cl} dangerouslySetInnerHTML={{ __html: `${each.body}.` }}>

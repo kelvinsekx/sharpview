@@ -132,6 +132,7 @@ color: purple;
 background: #fff;
 border-top-left-radius: 50%;
 border-bottom-left-radius: 50%;
+z-index: 500;
 
   top: 23rem;
 right: 0px;

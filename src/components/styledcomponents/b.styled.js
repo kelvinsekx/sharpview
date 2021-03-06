@@ -77,6 +77,9 @@ align-items: center;
 justify-content: center;
 //border: 2px solid red;
 margin: 0.3rem 0;
+@media (min-width: 888px){
+    margin-top: ${({rem})=> rem ? '4rem' : null};
+}
 `
 
 export const StyledIndexFlex = Styled.div`
@@ -93,7 +96,7 @@ flex-direction: column;
 position: relative;
 @media (min-width: 788px){
     flex-direction: row;
-    align-items: center;
+    align-items: ${({c})=>c ? 'center' : null};
     justify-content: center;
 }
 `

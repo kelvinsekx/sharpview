@@ -6,3 +6,8 @@
     padding: 2rem 0;
     padding-left: 0.7em;
 }
+
+.ap >div>div>p{
+    font-size: 87%;
+    padding: 0.5rem 0.14rem;
+}
