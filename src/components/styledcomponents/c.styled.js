@@ -62,11 +62,16 @@ export const StyledPop = Styled.ul`
 display: flex;
 flex-direction: column;
 align-items: center;
+@media (min-width: 888px){
+li{
+min-width: 20rem;
+}
+}
 li{
     display: block;
     list-style: none;
     border: 2px solid green;
-    min-width: 20rem;
+    min-width: 10.2rem;
     padding: 0.5em 0;
     padding-left: 0.33em;
     a{
