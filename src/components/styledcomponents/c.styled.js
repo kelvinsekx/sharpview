@@ -71,7 +71,7 @@ li{
     display: block;
     list-style: none;
     border: 2px solid green;
-    min-width: 10.2rem;
+    min-width: 14.2rem;
     padding: 0.5em 0;
     padding-left: 0.33em;
     a{
