@@ -29,9 +29,10 @@ function Layout(props) {
           </Link>
         </div>
         <div>
-          {["About Us", "Contact", "Book a Session"].map(each => (
+          {["About Us", "Contact"].map(each => (
             <MinNavLi key={each}>{each}</MinNavLi>
           ))}
+          <li><a href="https://forms.gle/ssGd28KgtSPZbi9s6">Book an appointment</a></li>
         </div>
         <footer
           style={{ color: "grey", marginTop: "2rem", padding: "0.3em 0.2em" }}

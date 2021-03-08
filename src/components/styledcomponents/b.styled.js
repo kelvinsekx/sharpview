@@ -78,7 +78,7 @@ justify-content: center;
 //border: 2px solid red;
 margin: 0.3rem 0;
 @media (min-width: 888px){
-    margin-top: ${({rem})=> rem ? '4rem' : null};
+    margin-top: ${({rem})=> rem ? '4rem' : '1.35rem'};
 }
 `
 

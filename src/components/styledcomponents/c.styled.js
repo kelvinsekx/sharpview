@@ -57,6 +57,38 @@ position: sticky;
          display: none;
      }
 `
+
+export const StyledPop = Styled.ul`
+display: flex;
+flex-direction: column;
+align-items: center;
+li{
+    display: block;
+    list-style: none;
+    border: 2px solid green;
+    min-width: 20rem;
+    padding: 0.5em 0;
+    padding-left: 0.33em;
+    a{
+        text-decoration: none;
+        color: green;
+        display: flex;
+        justify-content: center;
+        div{
+            padding-left: 1em;
+        }
+    }
+}
+
+li:hover{
+    background-color: green;
+    color: white;
+    a{
+        color: white;
+    }
+}
+`
+
 export const StyledArr = Styled.div`
 position: relative;
 @media (min-width: 588px){

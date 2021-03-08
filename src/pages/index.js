@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "gatsby"
 import Layout from "../components/layout"
 import Zoom from 'react-reveal/Zoom';
 import Bounce from 'react-reveal/Bounce';
@@ -14,10 +15,13 @@ import {StyledIndexThreeFlex,Num, StyledStrong,
   StyledL4} from "../components/styledcomponents/b.styled";
 
 import {StyledCaptor, StyledCaptorP, StyledExploreBtn,
-  StyledArr, StyledFlex, StyledCall, StyledCaptorPaa, StyledUrgent} from "../components/styledcomponents/c.styled"
+  StyledArr, StyledFlex, StyledCall, StyledCaptorPaa, StyledUrgent, StyledPop} from "../components/styledcomponents/c.styled"
 import "../components/indexCss.css"
 
-import {BsArrowRight} from "@react-icons/all-files/bs/BsArrowRight";
+import {FiCornerRightDown} from "@react-icons/all-files/fi/FiCornerRightDown";
+import {FiActivity} from "@react-icons/all-files/fi/FiActivity"
+import {FiPhoneCall} from "@react-icons/all-files/fi/FiPhoneCall"
+import {FiFeather} from "@react-icons/all-files/fi/FiFeather"
 import {FaPhone} from "@react-icons/all-files/fa/FaPhone";
   import LetterEyesExam from "../components/LetterEyesExam.js"
 
@@ -41,6 +45,31 @@ function Home() {
         <StyledIndexThreeFlex dir="column" style={{color: 'grey',textAlign: 'center', fontSize: '90%'}}><span style={{color: 'black', fontWeight: '800'}}>#</span>Whether you need a new pair of eyeglasses or treatment for an eye disease.</StyledIndexThreeFlex>
 
         <StyledIndexThreeFlex as="article" dir="column">
+          <Num>0</Num>
+          <Zoom><StyledL4>rather be at your comfort</StyledL4></Zoom>
+          <StyledL3><div>Don't move too fast </div> <div style={{ color: '#119905', fontSize: '85%'}}>when you can</div></StyledL3>
+          <StyledIndexThreeFlex width="80%">
+            <StyledPop>
+              <Zoom>
+              <li><a href="tel:+234 229 18611">
+                <div><FiPhoneCall /></div> 
+                <div>Give us a call</div></a>
+              </li>
+              </Zoom>
+              <Zoom>
+              <li><a href="https://forms.gle/ssGd28KgtSPZbi9s6">
+                <div><FiActivity /></div>
+                <div>Make an appointment</div></a>
+              </li>
+              </Zoom>
+              <li><Link to="/contact">
+                <div><FiFeather /></div>
+                <div>Lodge a complain</div></Link></li>
+            </StyledPop>
+          </StyledIndexThreeFlex>
+        </StyledIndexThreeFlex>
+
+        <StyledIndexThreeFlex as="article" dir="column">
           <Num>1</Num>
           <Zoom><StyledL4>top notch services</StyledL4></Zoom>
           <StyledL3><div>Services rendered</div> <div style={{ color: '#119905', fontSize: '85%'}}>by Sharpview</div></StyledL3>
@@ -55,7 +84,7 @@ function Home() {
             </StyledTwoFlex>
           </StyledIndexThreeFlex>
           <StyledExploreBtn>
-            <div>Explore what more we offer</div> <StyledArr ><BsArrowRight /></StyledArr></StyledExploreBtn>
+            <div>Explore what more we offer</div> <StyledArr ><FiCornerRightDown /></StyledArr></StyledExploreBtn>
         </StyledIndexThreeFlex>
         <StyledUrgent>
           <a href="tel:+234 229 18611">urgent? call now</a>
