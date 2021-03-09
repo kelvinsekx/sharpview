@@ -64,14 +64,14 @@ flex-direction: column;
 align-items: center;
 @media (min-width: 888px){
 li{
-min-width: 20rem;
+width: 25rem;
 }
 }
 li{
     display: block;
     list-style: none;
     border: 2px solid green;
-    min-width: 14.2rem;
+    min-width: 15.2rem;
     padding: 0.5em 0;
     padding-left: 0.33em;
     a{
