@@ -93,6 +93,16 @@ li:hover{
     }
 }
 `
+export const StyledArrorwDown = Styled.div`
+position: relative;
+top: -5rem;
+display: flex;
+align-items: center;
+justify-content: center;
+@media (max-width: 888px){
+ display: none;
+}
+`;
 
 export const StyledArr = Styled.div`
 position: relative;

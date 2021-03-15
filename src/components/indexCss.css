@@ -7,7 +7,34 @@
     padding-left: 0.7em;
 }
 
+.ap{
+ padding: 0 1em;
+}
 .ap >div>div>p{
     font-size: 87%;
     padding: 0.5rem 0.14rem;
+    width: 90%;
+    color: #555;
+}
+.ap >div>div{
+    margin: 1rem 0;
+}
+.ap >div>div>h2{
+    font-size: 107%;
+    padding: 0.5rem 0.14rem;
+}
+
+
+@media only screen and (min-width: 888px){
+.ap{
+    width: 80vw !important;
+    margin: 1em auto !important;
+}
+.ap >div>div{
+    margin-bottom: 0.01rem;
+}
+.ap >div>div>h2{
+    font-size: 127%;
+    padding: 0.5rem 0.14rem;
+}
 }

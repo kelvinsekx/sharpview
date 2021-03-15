@@ -14,7 +14,7 @@ import {StyledIndexThreeFlex,Num, StyledStrong,
   StyledInH4, StyledDetails, StyledEqualHalf, 
   StyledL4} from "../components/styledcomponents/b.styled";
 
-import {StyledCaptor, StyledCaptorP, StyledExploreBtn,
+import {StyledCaptor, StyledCaptorP, StyledExploreBtn,StyledArrorwDown,
   StyledArr, StyledFlex, StyledCall, StyledCaptorPaa, StyledUrgent, StyledPop} from "../components/styledcomponents/c.styled"
 import "../components/indexCss.css"
 
@@ -31,6 +31,7 @@ function Home() {
   return (
     <Layout>
       <ImgCarousel />
+      <StyledArrorwDown>arrow</StyledArrorwDown>
       <div>
         <StyledIndexThreeFlex dir="column">
           <StyledCaptor>
@@ -76,7 +77,7 @@ function Home() {
           <StyledIndexThreeFlex width="80%">
             <StyledTwoFlex c={true}>
               {WWD.map(each=><StyledIndexFlex dir="column" key={each.part}>
-                  <StyledInH4><span style={{color: "purple"}}>{each.part}</span>{each.main}</StyledInH4>
+                  <StyledInH4><span style={{color: "green"}}>{each.part}</span>{each.main}</StyledInH4>
                     <StyledDetails colr={each.cl} dangerouslySetInnerHTML={{ __html: `${each.body}.` }}>
                     </StyledDetails>
                 </StyledIndexFlex>)
@@ -93,7 +94,7 @@ function Home() {
         <StyledIndexThreeFlex as="article" dir="column">
           <Num>2</Num>
           <Zoom><StyledL4>fast delivery</StyledL4></Zoom>
-          <StyledL3>Start from here</StyledL3>
+          <StyledL3>Start from here <div style={{ color: '#119905', fontSize: '85%'}}>it can be painless</div></StyledL3>
           {/* <LetterEyesExam /> */}
           <StyledIndexThreeFlex>
           <StyledTwoFlex>

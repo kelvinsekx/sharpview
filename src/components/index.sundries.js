@@ -15,6 +15,6 @@ return (
 
 export function Lala (props){
     return (
-        <div style={{width: '5%', maxHeight: '10%', backgroundColor: props.cu, padding: '0.3rem 0.4rem'}}></div>
+        <div style={{width: '6.666%', maxHeight: '10%', background: `linear-gradient(to right, ${props.cu}, #7026B9)`, padding: '0.3rem 0.4rem', borderRadius: '2px', border: 'none', marginBottom: '0.5em'}}></div>
     )
 }

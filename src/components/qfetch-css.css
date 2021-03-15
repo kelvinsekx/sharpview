@@ -15,7 +15,7 @@ body {
 .ctFlex{
   display: flex;
   flex-direction: column;
-  padding-top: 2rem;
+  padding-top: 0.04rem;
   align-items:center;
 }
 .ctf-1{
@@ -23,7 +23,7 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 2em 0.8em;
+  padding: 1em 0.8em;
 }
 
 .ctf-2{
@@ -32,10 +32,21 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 1em;
-  border-top: 2px solid #444;
+  width: 100vw;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: rgba(245, 243, 243, 0.78);
 }
 .ctp{
   padding-top: 1.2em;
+  color : rgb(102, 95, 95);
+}
+
+.fi-link{
+  color: rgb(173, 35, 173);
+}
+.fi-link:hover{
+  color: rgb(112, 10, 112);
 }
 .tits{
   padding-top: 0.7em;
@@ -48,7 +59,7 @@ body {
   width: 100%;
   border: none;
   border-bottom: 1px solid #444;
-  color: #555;
+  color: rgb(44, 40, 40);
 }
 
 @media only screen and (min-width: 888px){
@@ -56,6 +67,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-top: 1rem;
   }
   .ctf-1{
     text-align: center;
