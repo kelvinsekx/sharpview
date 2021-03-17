@@ -23,9 +23,9 @@ import {FiActivity} from "@react-icons/all-files/fi/FiActivity"
 import {FiPhoneCall} from "@react-icons/all-files/fi/FiPhoneCall"
 import {FiFeather} from "@react-icons/all-files/fi/FiFeather"
 import {FaPhone} from "@react-icons/all-files/fa/FaPhone";
-  import LetterEyesExam from "../components/LetterEyesExam.js"
 
-  import {DTT, WWD} from "../utils/openingDays"
+import {DTT, WWD} from "../utils/openingDays"
+import Snellen from "../images/Snellen_chart.svg.png"
 
 function Home() {
   return (
@@ -95,11 +95,10 @@ function Home() {
           <Num>2</Num>
           <Zoom><StyledL4>fast delivery</StyledL4></Zoom>
           <StyledL3>Start from here <div style={{ color: '#119905', fontSize: '85%'}}>it can be painless</div></StyledL3>
-          {/* <LetterEyesExam /> */}
           <StyledIndexThreeFlex>
           <StyledTwoFlex>
             <StyledEqualHalf eq='70%' style={{textAlign: 'center'}}>
-            <LetterEyesExam />
+            <img src = {Snellen} alt="snellen diagram" className='sne-img' />
             </StyledEqualHalf>
             <StyledEqualHalf eq='30%' className="Xsdrt-open">
               <header style={{color: '#119905', padding: '1em', textAlign: 'center'}}>Our working days and time </header>
