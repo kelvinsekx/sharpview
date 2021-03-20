@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 
 import {FiActivity} from "@react-icons/all-files/fi/FiActivity"
 import {navigate} from "gatsby-link"
-
+import SEO from "../components/seo"
 
 export default function Contact () {
     const [statement, setStatement] = useState('submit');
@@ -42,6 +42,10 @@ export default function Contact () {
     }
     return (
         <Layout>
+            {/** seo */}
+            <SEO title="contact sharpview" />
+
+            {/**other stuff */}
             <h1>Contact Us</h1>
             <div className='ctFlex'>
                 <div className="ctf-1">

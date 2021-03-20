@@ -6,6 +6,8 @@ import Bounce from 'react-reveal/Bounce';
 import Fade from 'react-reveal/Fade';
 import Rotate from 'react-reveal/Rotate';
 
+import SEO from "../components/seo"
+
 // import "../utils/tinySticky"
 
 import {ImgCarousel} from "../components/index.sundries"
@@ -22,7 +24,9 @@ import {FiCornerRightDown} from "@react-icons/all-files/fi/FiCornerRightDown";
 import {FiActivity} from "@react-icons/all-files/fi/FiActivity"
 import {FiPhoneCall} from "@react-icons/all-files/fi/FiPhoneCall"
 import {FiFeather} from "@react-icons/all-files/fi/FiFeather"
+import {FiArrowDown} from "@react-icons/all-files/fi/FiArrowDown"
 import {FaPhone} from "@react-icons/all-files/fa/FaPhone";
+
 
 import {DTT, WWD} from "../utils/openingDays"
 import Snellen from "../images/Snellen_chart.svg.png"
@@ -30,8 +34,12 @@ import Snellen from "../images/Snellen_chart.svg.png"
 function Home() {
   return (
     <Layout>
+      {/** seo */}
+      <SEO title="welcome to sharpview" />
+
+      {/**other stuff */}
       <ImgCarousel />
-      <StyledArrorwDown>arrow</StyledArrorwDown>
+      <StyledArrorwDown><FiArrowDown /></StyledArrorwDown>
       <div>
         <StyledIndexThreeFlex dir="column">
           <StyledCaptor>

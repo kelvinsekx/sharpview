@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import {Lala} from "../components/index.sundries";
 
+import Seo from "../components/seo"
 import "../components/indexCss.css";
 import Fade from 'react-reveal/Fade';
 import {StyledIndexThreeFlex,StyledTwoFlex,StyledIndexFlex} from "../components/styledcomponents/b.styled";
@@ -9,6 +10,10 @@ import {StyledIndexThreeFlex,StyledTwoFlex,StyledIndexFlex} from "../components/
 export default function About (){
      return (
      <Layout>
+     {/** seo  */}
+     <Seo title="about sharpview" />
+
+     {/**other stuff */}
           <StyledIndexThreeFlex rem={true} className="ap">
                <StyledTwoFlex>
                <StyledIndexFlex dir="column">

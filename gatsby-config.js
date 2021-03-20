@@ -3,6 +3,13 @@
 */
 
 module.exports = {
+  siteMetadata: {
+    title: "sharpview optometric clinic",
+    description: "Sharpview Optometric Clinic is a leading optometric clinic and eye care centre in Nigeria. It provides services ranging from eye exams, glasses and all other expertise service. ",
+    author: "kelvinsekx",
+    keywords: ['optometric', 'optometric clinic in Ibadan', "eye centre in Nigera", "clinic in Nigeria", "eye care center", "Gbolade Osinuga", "top clinic in Ibadan", "best clinic in Nigeria and Ibadan", 'best eye doctor in Nigeria and Ibadan']
+  },
+
   plugins: [
     // gatsby-manifest will always top
     {
