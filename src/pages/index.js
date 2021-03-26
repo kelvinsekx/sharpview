@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 import Rotate from 'react-reveal/Rotate';
 
 import SEO from "../components/seo"
-
+import Stuck from "../components/stuck"
 // import "../utils/tinySticky"
 
 import {ImgCarousel} from "../components/index.sundries"
@@ -17,7 +17,7 @@ import {StyledIndexThreeFlex,Num, StyledStrong,
   StyledL4} from "../components/styledcomponents/b.styled";
 
 import {StyledCaptor, StyledCaptorP, StyledExploreBtn,StyledArrorwDown,
-  StyledArr, StyledFlex, StyledCall, StyledCaptorPaa, StyledUrgent, StyledPop} from "../components/styledcomponents/c.styled"
+  StyledArr, StyledFlex, StyledCall, StyledCaptorPaa, StyledPop, StyledUrgent} from "../components/styledcomponents/c.styled"
 import "../components/indexCss.css"
 
 import {FiCornerRightDown} from "@react-icons/all-files/fi/FiCornerRightDown";
@@ -95,9 +95,14 @@ function Home() {
           <StyledExploreBtn>
             <div>Explore what more we offer</div> <StyledArr ><FiCornerRightDown /></StyledArr></StyledExploreBtn>
         </StyledIndexThreeFlex>
-        <StyledUrgent>
-          <a href="tel:+234 229 18611">urgent? call now</a>
-        </StyledUrgent>
+
+          <Stuck>
+          <Zoom>
+            <div>
+                <a href="tel:+234 229 18611">urgent? call now</a>
+            </div>
+            </Zoom>
+          </Stuck>
 
         <StyledIndexThreeFlex as="article" dir="column">
           <Num>2</Num>

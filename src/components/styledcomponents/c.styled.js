@@ -2,13 +2,13 @@ import Styled from "styled-components"
 
 export const StyledCaptor = Styled.div`
 font-size: 2rem;
-font-weight: 800; 
+font-weight: 900; 
 text-align: center; 
 letter-spacing: -0.015em;
 line-height: 1.1;
 @media (min-width: 588px){
-    font-size: 4.9rem;
-    letter-spacing: -0.115em;
+    font-size: 5rem;
+    letter-spacing: -0.112em;
 }
 `
 
@@ -46,13 +46,7 @@ border-radius: 12%;
 `
 
 export const StyledUrgent = Styled.div`
-position: sticky;
-    bottom: 0px;
-    background-color: #000;
-    color: rgb(165, 87, 165);
-     width: 44%;
-     font-size: 88%;
-     padding: 0.3em 0.1em;
+    display: none;
      @media (min-width: 588px){
          display: none;
      }
