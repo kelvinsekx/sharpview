@@ -17,14 +17,14 @@ import {StyledIndexThreeFlex,Num, StyledStrong,
   StyledL4} from "../components/styledcomponents/b.styled";
 
 import {StyledCaptor, StyledCaptorP, StyledExploreBtn,StyledArrorwDown,
-  StyledArr, StyledFlex, StyledCall, StyledCaptorPaa, StyledPop, StyledUrgent} from "../components/styledcomponents/c.styled"
+  StyledArr, StyledFlex, StyledCall, StyledCaptorPaa, StyledPop} from "../components/styledcomponents/c.styled"
 import "../components/indexCss.css"
 
 import {FiCornerRightDown} from "@react-icons/all-files/fi/FiCornerRightDown";
 import {FiActivity} from "@react-icons/all-files/fi/FiActivity"
 import {FiPhoneCall} from "@react-icons/all-files/fi/FiPhoneCall"
 import {FiFeather} from "@react-icons/all-files/fi/FiFeather"
-import {FiArrowDown} from "@react-icons/all-files/fi/FiArrowDown"
+import {FiChevronDown} from "@react-icons/all-files/fi/FiChevronDown"
 import {FaPhone} from "@react-icons/all-files/fa/FaPhone";
 
 
@@ -39,7 +39,10 @@ function Home() {
 
       {/**other stuff */}
       <ImgCarousel />
-      <StyledArrorwDown><FiArrowDown /></StyledArrorwDown>
+      <StyledArrorwDown>
+        <span><FiChevronDown/></span>
+        <div>scroll</div>
+      </StyledArrorwDown>
       <div>
         <StyledIndexThreeFlex dir="column">
           <StyledCaptor>

@@ -1,13 +1,13 @@
 import Styled from "styled-components"
 
 export const StyledCaptor = Styled.div`
-font-size: 2rem;
+font-size: 2.5rem;
 font-weight: 900; 
 text-align: center; 
-letter-spacing: -0.015em;
+letter-spacing: -0.045em;
 line-height: 1.1;
 @media (min-width: 588px){
-    font-size: 5rem;
+    font-size: 720%;
     letter-spacing: -0.112em;
 }
 `
@@ -89,13 +89,39 @@ li:hover{
 `
 export const StyledArrorwDown = Styled.div`
 position: relative;
-top: -5rem;
+top: -8rem;
+height: 2rem;
 display: flex;
 align-items: center;
 justify-content: center;
-@media (max-width: 888px){
- display: none;
+flex-direction : column;
+color: #fff;
+z-index: 20;
+transition: opacity .3s;
+font-size: 120%;
+&:hover{
+    opacity: .5
 }
+span {
+    animation: sdb 3s infinite;
+    display:block;
+    font-size: 160%;
+    font-weight: 400;
+}
+@keyframes sdb {
+    0% {
+        transform: translate(0, 0);
+    }
+    20%{
+        transform: translate(-1px, 30%)
+    }
+    40%{
+        transform: translate(0, 0)
+    }
+}
+@media (max-width: 888px){
+    display: none;
+   }
 `;
 
 export const StyledArr = Styled.div`
