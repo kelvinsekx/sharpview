@@ -43,7 +43,7 @@ function Home() {
         <span><FiChevronDown/></span>
         <div>scroll</div>
       </StyledArrorwDown>
-      <div>
+      <div style={{margin: "0", padding: "0"}}>
         <StyledIndexThreeFlex dir="column">
           <StyledCaptor>
             <Bounce><div style={{color:'#7026B9'}}>One Eye Care to </div></Bounce>

@@ -22,13 +22,13 @@ export const Banner = () => (
   <aside>
     <StyledBannerWrapper>
       <div>
-        <p>
-          <strong>More than an Eye Clinic:</strong> Join us at Sharpview!{" "}
+        <p style={{fontSize: '80%'}}>
+          <strong>More to clinic:</strong> Join us at Sharpview!{" "}
           <StyledBannerAnchor href="https://forms.gle/ssGd28KgtSPZbi9s6">
             Book a session now
           </StyledBannerAnchor>
         </p>
-        <p style={{fontSize: '67%'}}>No. 64, Adjascent Chicken Replublic, Lagos Road, Elewura Bus-top, <span style={{display: 'block'}}>Challenge, Ibadan.</span></p>
+        <p style={{fontSize: '77%'}}>No. 64, Adjascent Chicken Replublic, Lagos Road, Elewura Bus-top, <span style={{display: 'block'}}>Challenge, Ibadan.</span></p>
       </div>
     </StyledBannerWrapper>
   </aside>
